@@ -1,7 +1,7 @@
 <?php 
   echo "HELLO WORLD!"; 
-  echo "1234asdf";
   include "read.php";
+  echo "1234asdf";
   echo getUsers();
   echo "asdf1234";
 ?>
