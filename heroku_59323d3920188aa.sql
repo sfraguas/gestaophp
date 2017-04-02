@@ -3,4 +3,4 @@ CREATE TABLE IF NOT EXISTS 'users'(
   'pwd' varchar(10) NOT NULL,
 ) ;
 
-ISERT INTO 'users' values (1234, 'asdf');
+INSERT INTO 'users' values (1234, 'asdf');
