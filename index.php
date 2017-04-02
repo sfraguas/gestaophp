@@ -1,6 +1,6 @@
 <?php 
   echo "HELLO WORLD!"; 
   include "read.php";
-  $user getUsers();
+  $user = getUsers();
   echo $user;
 ?>
