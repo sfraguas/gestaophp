@@ -1,9 +1,10 @@
 <?php
+  
+  echo "asdf teste";
 
-  function getUsers(){
-    
-    echo "asdf";
-    
+  function getUsers()
+  {  
+    echo "asdf"; 
     //create connection
     include "connect_sql.php";
   
@@ -13,15 +14,18 @@
     
     //show results
     $userid ="";
-    if($result) {
-      while($row = mysqli_fetch_array($result){
+    if($result) 
+    {
+      while($row = mysqli_fetch_array($result))
+      {
         $return = $row['userid'];
       }
     } else { 
-      echo "read.php";
+      echo "asdf read.php";
     }
             
     return $return;
+    
   }
     
 ?>
