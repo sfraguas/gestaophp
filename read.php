@@ -16,7 +16,6 @@
       while($row = mysqli_fetch_array($result))
       {
         $return = $row[USERID];
-        echo $row[USERID];
       }
     } else { 
       echo "Não existem usuários";
