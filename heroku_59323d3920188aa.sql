@@ -1,6 +1,7 @@
-CREATE TABLE IF NOT EXISTS 'users'(
-  'userid' int(10) NOT NULL,
-  'pwd' varchar(10) NOT NULL,
+DROP TABLE USERS
+CREATE TABLE USERS(
+  USERID int(10) NOT NULL,
+  PWD varchar(10) NOT NULL,
 ) ;
 
-INSERT INTO 'users' values (1234, 'asdf');
+INSERT INTO USERS values (1234, 'asdf');
