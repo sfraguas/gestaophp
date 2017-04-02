@@ -54,9 +54,15 @@
             $palestras = getPalestras()
             foreach($palestra as p){
               
-              echo "<form action="methods.php" method="register(p, getUser())"> 
+              echo "<form action="methods.php" method="register(".p."> 
                       <p>". p ."</p> <button type="button">Registrar</button>"
-          } 
+          } else {
+              echo "<form action="methods.php" method="setUser">
+                        <input type="textbox" placeholder="Nome de Usuário"/>
+                        </br>
+                        <input type="submit" value="Registrar!">
+                     </form>"
+          }
         ?>
         
         <!--<h1>Fixed Top Navigation Bar</h1>
