@@ -6,5 +6,5 @@
   $user = getUsers();
   echo "depois de chamada do metodo";
   echo $user;
-  echo "depois de out do retorno do metodo;
+  echo "depois de out do retorno do metodo";
 ?>
