@@ -10,7 +10,8 @@
     $result = mysqli_query($conn, $sql);
     
     //show results
-    $userid ="";
+    $return ="";
+    echo $result;
     if($result) 
     {
       while($row = mysqli_fetch_array($result))
