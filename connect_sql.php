@@ -7,11 +7,11 @@
   $db = substr($url["path"], 1);
 
   echo $server;
-  echo "\n";
+  echo "\r \n";
   echo $username;
-  echo "\n";
+  echo "\r \n";
   echo $password;
-  echo "\n";  
+  echo "\r \n";  
   echo $db;
 
   $conn = new mysqli($server, $username, $password, "tables");
