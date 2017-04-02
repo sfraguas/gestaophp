@@ -19,6 +19,8 @@
       {
         echo "while";
         $return = $row['userid'];
+        echo $row['userid'];
+        echo "depois de userid;
       }
     } else { 
       echo "Não existem usuários";
