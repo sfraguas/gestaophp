@@ -1,5 +1,7 @@
 <?php
 
+  echo "read pagina \\n";
+
   function getUsers()
   {   
     //create connection
