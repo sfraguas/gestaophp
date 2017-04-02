@@ -46,13 +46,13 @@ li a:hover:not(.active) {
 
   <ul>
     <li><a href="index.php">Index</a></li>
-    <li><a class="active" href="eventos.php">Eventos</a></li>
-    <li><a href="combinacoes.php">Combinacoes</a></li>
+    <li><a href="eventos.php">Eventos</a></li>
+    <li><a class="active" href="combinacoes.php">Combinacoes</a></li>
     <li><a href="#about">About</a></li>
   </ul>
 
   <div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
-    <?php echo getEvents(); ?>
+    <?php echo getCombinacoes(); ?>
     <!--<h1>Fixed Top Navigation Bar</h1>
     <h2>Scroll this page to see the effect</h2>
     <h2>The navigation bar will stay at the top of the page while scrolling</h2>

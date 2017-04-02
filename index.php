@@ -46,8 +46,8 @@ li a:hover:not(.active) {
 
   <ul>
     <li><a class="active" href="index.php">Index</a></li>
-    <li><a href="#eventos.php">Eventos</a></li>
-    <li><a href="#combinacoes.php">Combinacoes</a></li>
+    <li><a href="eventos.php">Eventos</a></li>
+    <li><a href="combinacoes.php">Combinacoes</a></li>
     <li><a href="#about">About</a></li>
   </ul>
 
