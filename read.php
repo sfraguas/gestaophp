@@ -1,10 +1,7 @@
 <?php
-  
-  echo "asdf teste";
 
   function getUsers()
-  {  
-    echo "asdf"; 
+  {   
     //create connection
     include "connect_sql.php";
   
@@ -21,7 +18,7 @@
         $return = $row['userid'];
       }
     } else { 
-      echo "asdf read.php";
+      echo "| asdf read.php |";
     }
             
     return $return;
