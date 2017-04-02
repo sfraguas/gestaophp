@@ -20,8 +20,8 @@
       while($row = mysqli_fetch_array($result))
       {
         echo "while";
-        $return = $row['userid'];
-        echo $row['userid'];
+        $return = $row[USERID];
+        echo $row[USERID];
         echo "depois de userid";
       }
     } else { 
