@@ -15,7 +15,7 @@
   echo "- DB: ";
   echo $db;
 
-  $conn = new mysqli($server, $username, $password, "tables");
+  $conn = new mysqli($server, $username, $password, $db);
   
   if(mysqli_connect_errno()){
     echo "connect_sql.php   - ".mysqli_connect_error();
