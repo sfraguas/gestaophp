@@ -1,7 +1,0 @@
-DROP TABLE USERS
-CREATE TABLE USERS(
-  USERID int(10) NOT NULL,
-  PWD varchar(10) NOT NULL,
-) ;
-
-INSERT INTO USERS values (1234, 'asdf');
