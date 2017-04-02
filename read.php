@@ -1,6 +1,9 @@
 <?php
 
   function getUsers(){
+    
+    echo "asdf";
+    
     //create connection
     include "connect_sql.php";
   
