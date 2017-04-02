@@ -6,6 +6,11 @@
   $password = $url["pass"];
   $db = substr($url["path"], 1);
 
+  echo $server;
+  echo $username;
+  echo $password;
+  echo $db;
+
   $conn = new mysqli($server, $username, $password, "tables");
   
   if(mysqli_connect_errno()){
