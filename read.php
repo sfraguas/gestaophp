@@ -14,6 +14,8 @@
       while($row = mysqli_fetch_array($result){
         echo $row['userid'];
       }
+    } else { 
+      echo "read.php";
     }
     
 ?>
