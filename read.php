@@ -10,16 +10,18 @@
     $result = mysqli_query($conn, $sql);
     
     //show results
-    $return ="";
-    echo $result;
+    $return ="oi";
+    echo "antes do if";
     if($result) 
     {
+      echo "dentro do if; antes do while";
       while($row = mysqli_fetch_array($result))
       {
+        echo "while";
         $return = $row['userid'];
       }
     } else { 
-      echo "| asdf read.php |";
+      echo "Não existem usuários";
     }
             
     return $return;
