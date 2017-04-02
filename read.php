@@ -1,6 +1,6 @@
 <?php
 
-  function getUsers()
+  function getUsers(){
     //create connection
     include "connect_sql.php";
   
@@ -12,10 +12,13 @@
     $userid ="";
     if($result) {
       while($row = mysqli_fetch_array($result){
-        echo $row['userid'];
+        $return = $row['userid'];
       }
     } else { 
       echo "read.php";
     }
+            
+    return $return;
+  }
     
 ?>
