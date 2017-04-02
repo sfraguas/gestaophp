@@ -54,7 +54,7 @@
             $palestras = getPalestras()
             foreach($palestra as p){
               
-              echo "<form action="methods.php" method="register(".p."> 
+              echo "<form action="methods.php" method="register" 
                       <p>". p ."</p> <button type="button">Registrar</button>"
           } else {
               echo "<form action="methods.php" method="setUser">
