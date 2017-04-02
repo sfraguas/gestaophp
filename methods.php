@@ -1,8 +1,10 @@
 <?php
 
+  include "connect_sql.php";
+
   function getUsers() {
     //create connection
-    include "connect_sql.php";
+    //include "connect_sql.php";
     //create query
     $sql = "SELECT USERID FROM USERS";
     $result = mysqli_query($conn, $sql);
@@ -18,6 +20,23 @@
       echo "Não existem usuários";
     }
     return $return;
+  }
+
+  function getUser(){
+    $sql = "SELECT USERID FROM USER WHERE USERID = 'sfraguas'";
+    $result = mysqli_query($conn, $sql);
+    
+    return $row[USERID];
+  }
+
+  function setUser($name){
+    $sql = "INSERT INTO USERS VALUE('".$name.")";
+    mysqli_query($conn,$sql);
+  }
+
+
+  function isLogged(){
+    return false;
   }
 
   function getEvents() {
