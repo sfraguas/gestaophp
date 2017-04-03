@@ -48,7 +48,7 @@
       <section style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
         <?php
           include methods.php;
-        $aux = 1
+          $aux = 1;
           if($aux == 2)
           {
             echo "<form action="methods.php" method="registerPalestra"> <input type="text" placeholder="Código da palestra"> </br> <input type="submit" value="Registrar-se em palestra"> </form>";
