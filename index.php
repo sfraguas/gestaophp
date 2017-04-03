@@ -51,9 +51,9 @@
           $aux = 1;
           if($aux == 2)
           {
-            echo "<form action="methods.php" method="registerPalestra"> <input type="text" placeholder="Código da palestra"> </br> <input type="submit" value="Registrar-se em palestra"> </form>";
+            echo '<form action="methods.php" method="registerPalestra"> <input type="text" placeholder="Código da palestra"> </br> <input type="submit" value="Registrar-se em palestra"> </form>';
           } else {
-              echo "<form action="methods.php" method="setUser"> <input type="textbox" placeholder="Nome de Usuário"/> </br> <input type="submit" value="Registrar"> </form>";
+              echo '<form action="methods.php" method="setUser"> <input type="textbox" placeholder="Nome de Usuário"/> </br> <input type="submit" value="Registrar"> </form>';
           }
         ?>
         <!--<h1>Fixed Top Navigation Bar</h1>
