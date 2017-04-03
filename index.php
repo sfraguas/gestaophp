@@ -45,6 +45,17 @@
         <li><a href="#about">About</a></li>
       </ul>
 
+      <section style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+        <?php
+          include methods.php;
+          $isLogged = false;
+          if($isLogged)
+          {
+            echo "<form action="methods.php" method="registerPalestra"> <input type="text" placeholder="Código da palestra"> </br> <input type="submit" value="Registrar-se em palestra"> </form>"
+          } else {
+              echo "<form action="methods.php" method="setUser"> <input type="textbox" placeholder="Nome de Usuário"/> </br> <input type="submit" value="Registrar!"> </form>"
+          }
+        ?>
 
 
         
