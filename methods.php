@@ -34,6 +34,11 @@
     mysqli_query($conn,$sql);
   }
 
+  function registerPalestra($codPalestra, $user){
+    $sql = "INSERT INTO PALESTRASREGISTRADAS VALUE ('".$codPalestra.",".$user.")";
+    mysqli_query($conn,$sql);
+  }
+
 
   function isLogged(){
     return false;
