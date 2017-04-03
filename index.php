@@ -49,7 +49,7 @@
         <?php
           include methods.php;
           $aux = 1;
-          if($aux == 2)
+          if($aux == 1)
           {
             echo '<form action="methods.php" method="registerPalestra"> <input type="text" placeholder="Código da palestra"> </br> <input type="submit" value="Registrar-se em palestra"> </form>';
           } else {
