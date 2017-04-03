@@ -22,6 +22,27 @@
     return $return;
   }
 
+  function getPalestrasRegistradas() {
+    //create connection
+    //include "connect_sql.php";
+    //create query
+    $sql = "SELECT * FROM PALESTRASREGISTRADAS";
+    $result = mysqli_query($conn, $sql);
+    //show results
+    $return ="";
+    if($result)
+    {
+      while($row = mysqli_fetch_array($result))
+      {
+        $return += $row[USERID] ." - ";
+        $return += $row[PALESTRA] . " ------------ ";
+      }
+    } else {
+      echo "Não existem usuários registrados em palestras";
+    }
+    return $return;
+  }
+
   function getUser(){
     $sql = "SELECT USERID FROM USER WHERE USERID = 'sfraguas'";
     $result = mysqli_query($conn, $sql);
