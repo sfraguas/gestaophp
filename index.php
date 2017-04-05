@@ -12,12 +12,12 @@
           if($active == true)
           {
             echo <<<EOT
-              <form action="methods.php" method="registerPalestra"> 
-                <input type="text" placeholder="Código da palestra"> 
-                </br> 
-                <input type="submit" value="Registrar-se em palestra"> 
-              </form>
-            EOT;
+                <form action="methods.php" method="registerPalestra"> 
+                  <input type="text" placeholder="Código da palestra"> 
+                  </br> 
+                  <input type="submit" value="Registrar-se em palestra"> 
+                </form>
+              EOT;
           } else {
             echo '<form action="methods.php" method="setUser"> <input type="textbox" placeholder="Nome de Usuário"/> </br> <input type="submit" value="Registrar"> </form>';
           }
