@@ -19,7 +19,13 @@
                 </form>
 EOT;
           } else {
-            echo '<form action="methods.php" method="setUser"> <input type="textbox" placeholder="Nome de Usuário"/> </br> <input type="submit" value="Registrar"> </form>';
+            echo <<<EOT 
+                <form action="methods.php" method="setUser"> 
+                  <input type="textbox" placeholder="Nome de Usuário"/> 
+                  </br> 
+                  <input type="submit" value="Registrar"> 
+                </form>
+EOT;
           }
         ?>
       </section>
