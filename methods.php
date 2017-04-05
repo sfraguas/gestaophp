@@ -1,34 +1,14 @@
 <?php
 
+  //este arquivo contém os metodos usados
+  //para acessar os metodos, usar include methods.php e então chamar o methodo
+  //metodos aqui nao foram testados ainda!!!!
+
   include "connect_sql.php";
 
-  function getUsers() {
-    //create connection
-    //include "connect_sql.php";
-    //create query
-    $sql = "SELECT USERID FROM USERS";
+  function getPalestrasRegistradas($user, $palestra) {
+    $sql = "SELECT PR.PALESTRAID, P.PALESTRA FROM PR PALESTRASREGISTRADAS, P PALESTRAS WHERE PR.USERID = '".$user."' AND P.PALESTRAID = PR.PALESTRAID";
     $result = mysqli_query($conn, $sql);
-    //show results
-    $return ="";
-    if($result)
-    {
-      while($row = mysqli_fetch_array($result))
-      {
-        $return = $row[USERID];
-      }
-    } else {
-      echo "Não existem usuários";
-    }
-    return $return;
-  }
-
-  function getPalestrasRegistradas() {
-    //create connection
-    //include "connect_sql.php";
-    //create query
-    $sql = "SELECT * FROM PALESTRASREGISTRADAS";
-    $result = mysqli_query($conn, $sql);
-    //show results
     $return ="";
     if($result)
     {
@@ -38,71 +18,23 @@
         $return += $row[PALESTRA] . " ------------ ";
       }
     } else {
-      echo "Não existem usuários registrados em palestras";
+      echo "Usuário não esta registrado em nenhuma palestra";
     }
     return $return;
   }
 
-  function getUser(){
-    $sql = "SELECT USERID FROM USER WHERE USERID = 'sfraguas'";
-    $result = mysqli_query($conn, $sql);
-    
-    return $row[USERID];
-  }
-
   function setUser($name){
-    $sql = "INSERT INTO USERS VALUE('".$name.")";
+    $sql = "INSERT INTO USER VALUE('".$name.")";
     mysqli_query($conn,$sql);
   }
 
   function registerPalestra($codPalestra, $user){
-    $sql = "INSERT INTO PALESTRASREGISTRADAS VALUE ('".$codPalestra.",".$user.")";
+    $sql = "INSERT INTO PALESTRASREGISTRADAS SET PALESTRAID = (SELECT PALESTRAID FROM PALESTRA WHERE PALESTRAID = '".$codPalestra."'),
+                                                 USERID = (SELECT USERID FROM USER WHERE USERID = '".$user."')";
     mysqli_query($conn,$sql);
   }
 
 
   function isLogged(){
-    return false;
+  
   }
-
-  function getEvents() {
-    //create connection
-    include "connect_sql.php";
-    //create query
-    $sql = "SELECT EVENT_ID FROM EVENTS"; // VERIFICAR A TABELA CORRETAMENTE
-    $result = mysqli_query($conn, $sql);
-    //show results
-    $return ="";
-    if($result)
-    {
-      while($row = mysqli_fetch_array($result))
-      {
-        $return = $row[USERID];
-      }
-    } else {
-      echo "Não existem usuários";
-    }
-    return $return;
-  }
-
-  function getCombinacoes() {
-    //create connection
-    include "connect_sql.php";
-    //create query
-    $sql = "SELECT COMBINACAO_NAME FROM COMBINACAOES"; // VERIFICAR A TABELA CORRETAMENTE
-    $result = mysqli_query($conn, $sql);
-    //show results
-    $return ="";
-    if($result)
-    {
-      while($row = mysqli_fetch_array($result))
-      {
-        $return = $row[USERID];
-      }
-    } else {
-      echo "Não existem usuários";
-    }
-    return $return;
-  }
-
-?>
