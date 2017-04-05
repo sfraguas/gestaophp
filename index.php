@@ -19,7 +19,7 @@
                 </form>
 REGP;
           } else {
-            echo <<< SIGNUP 
+            echo <<< SIGNUP
                 <form action="methods.php" method="setUser"> 
                   <input type="text" placeholder="Nome de Usuário"> 
                   </br> 
