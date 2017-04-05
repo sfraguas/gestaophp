@@ -19,13 +19,13 @@
                 </form>
 REGP;
           } else {
-            echo <<< USER 
-                <form action="methods.php" method="setUser"> 
-                  <input type="textbox" placeholder="Nome de Usuário"/> 
-                  </br> 
-                  <input type="submit" value="Registrar"> 
-                </form>
-USER;
+            //echo <<< USER 
+              //  <form action="methods.php" method="setUser"> 
+                //  <input type="textbox" placeholder="Nome de Usuário"/> 
+                  //</br> 
+            //      <input type="submit" value="Registrar"> 
+              //  </form>
+//USER;
           }
         ?>
       </section>
