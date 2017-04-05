@@ -8,7 +8,7 @@
         <?php
           // still testing methods
           //include methods.php;
-          $active = false; //isLogged();
+          $active = true; //isLogged();
           if($active == true)
           {
             echo <<< REGP
