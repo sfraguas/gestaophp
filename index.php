@@ -11,21 +11,21 @@
           $active = false; //isLogged();
           if($active == true)
           {
-            echo <<< EOT
+            echo <<< REGP
                 <form action="methods.php" method="registerPalestra"> 
                   <input type="text" placeholder="Código da palestra"> 
                   </br> 
                   <input type="submit" value="Registrar-se em palestra"> 
                 </form>
-EOT;
+REGP;
           } else {
-            echo <<< EOT 
+            echo <<< USER 
                 <form action="methods.php" method="setUser"> 
                   <input type="textbox" placeholder="Nome de Usuário"/> 
                   </br> 
                   <input type="submit" value="Registrar"> 
                 </form>
-EOT;
+USER;
           }
         ?>
       </section>
