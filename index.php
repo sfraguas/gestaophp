@@ -20,11 +20,7 @@
 REGP;
           } else {
             echo <<< USER 
-                <form action="methods.php" method="setUser"> 
-                  <input type="text" placeholder="Nome de Usuário"> 
-                  </br> 
-                  <input type="submit" value="Registrar"> 
-                </form>
+               
 USER;
           }
         ?>
